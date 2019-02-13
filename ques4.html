@@ -1,0 +1,18 @@
+<script type="text/javascript">
+var lunch = {appetizers : "Paneer Tikka", main : "Mughlai Chicken", dessert : "brownie"};
+var dinner = {};
+document.write("Before copying : Lunch = "+lunch.appetizers+", "+lunch.main+", "+lunch.dessert);
+document.write("<br>");
+document.write("Before copying : Dinner = "+dinner.appetizers+", "+dinner.main+", "+dinner.dessert);
+document.write("<br>");
+function copy(source, target) {
+  for(key in source) {
+    target[key] = source[key];
+  }
+  return target;
+}
+copy(lunch, dinner);
+document.write("After copying : Lunch = "+lunch.appetizers+", "+lunch.main+", "+lunch.dessert);
+document.write("<br>");
+document.write("After copying : Dinner = "+dinner.appetizers+", "+dinner.main+", "+dinner.dessert);
+</script>
