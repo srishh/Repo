@@ -1,0 +1,52 @@
+<script type="text/javascript">
+var Employee = [
+    {
+        name : "Srishti",
+        age : 20,
+        salary : 7000,
+        DOB : "26/02/1998"
+    },
+    {
+        name : "Ananya",
+        age : 21,
+        salary : 6500,
+        DOB : "26/02/1998"
+    },
+    {
+        name : "Vivek",
+        age : 21,
+        salary : 950,
+        DOB : "26/02/1998"
+    },
+    {
+        name : "Shloka",
+        age : 25,
+        salary : 800,
+        DOB : "26/02/1998"
+    },
+    {
+        name : "Abhishek",
+        age : 22,
+        salary : 3000,
+        DOB : "26/02/1998"
+    },
+]
+var filter = {};
+for(key in Employee){
+    if(Employee[key].salary>5000)
+    console.log["Employee name = "+Employee[key].name];
+}
+for(key in Employee){
+    filter[Employee[key].age] = [];
+}
+for(key in Employee){
+    filter[Employee[key].age].push(Employee[key].name);
+}
+for(key in Employee){
+    if(Employee[key].salary<1000 && Employee[key].age>20)
+    Employee[key].salary = parseInt(Employee[key].salary)*5;
+}
+for(key in Employee){
+    console.log(Employee[key]);
+}
+</script>
