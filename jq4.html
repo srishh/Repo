@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body style="vertical-align: baseline"> 
+        <input type="text" class="ip" title="Enter text here">
+        <input type="submit" class="sb">
+
+        <script>
+        $(document).ready(function(){
+            $(".sb").click(function(submit) {
+		        submit.preventDefault();
+            });
+        });
+        </script>
+    </body>
+</html>
