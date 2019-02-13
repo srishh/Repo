@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="main">Content of parent
+            <p class="target">Content of child</p>
+        </div>
+
+        <script>
+        $(document).ready(function(){
+            $("div p").css("fontSize", "50px");
+        });
+        </script>
+    </body>
+</html>
