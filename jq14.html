@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="parent"><h3>Table</h3>
+        <table class="table" border="1"  style="width:80%">
+            <tr>
+                <th>
+                    Employee ID
+                </th>
+                <th>
+                    Employee Name
+                </th>
+                <th>
+                    Department
+                </th>
+                <th>
+                    Years of Experience
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Srishti
+                </td>
+                <td>
+                    IT
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    Ananya
+                </td>
+                <td>
+                    HR
+                </td>
+                <td>
+                    7
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Vivek
+                </td>
+                <td>
+                    BA
+                </td>
+                <td>
+                    11
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    Shloka
+                </td>
+                <td>
+                    Marketing
+                </td>
+                <td>
+                    14
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    Abhishek
+                </td>
+                <td>
+                    IT
+                </td>
+                <td>
+                    15
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                var cell = $(".table td");
+                cell.each(function(){
+                    var cellval = $(this).html();
+                    if(cellval>10)
+                        $(this).css("background-color","skyblue");
+                });
+            });
+        </script>
+    </body>
+</html>
