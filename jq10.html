@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h4>Select from the menu : <br></h4>
+            <div class="drop">Choose from here : 
+                <li title="Cappucino" hidden>Cappucino</li>
+                <li title="Espresso" hidden>Espresso</li>
+                <li title="Americano" hidden>Americano</li>
+                <li title="Latte" hidden>Latte</li>
+                <li title="Frappe" hidden>Frappe</li>
+            </div>   
+        </div>
+
+        <script>
+        $(document).ready(function(){
+            $(".drop").hover(function(){
+                $(".drop > li").finish().slideDown("medium");
+            }, function(){
+                $(".drop > li").finish().slideUp("medium");
+            });
+            $(".drop > li").click(function(){
+                alert("You have selected : "+this.title);
+            });
+        });
+        </script>
+    </body>
+</html>
