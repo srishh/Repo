@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h4>Select city : <br></h4>
+            <select>
+                    <option value="" selected disabled hidden>---Choose here---</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Gurgaon">Gurgaon</option>
+            </select>
+        </div>
+        
+        <script>
+        $(document).ready(function(){
+            $('select').on('change', function() {
+                alert("Your choice has been recorded : "+ this.value );
+                $("h4").append(this.value);
+            });
+            
+        });
+        </script>
+    </body>
+</html>
