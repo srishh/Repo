@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="parent">You can select <b>all colors</b> by clicking <p class="link" style="color:blue">here</p> or, select from below: 
+            <li>Black</li>
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Grey</li>
+            <li>Greem</li>
+        </div>
+
+        <script>
+        $(document).ready(function(e){
+            $(".parent").on("click", function(){
+                $("div > li").on("click", function(event){
+                    event.stopPropagation();
+                });
+                alert("You have selected the all colors option.");
+            });
+        });
+        </script>
+    </body>
+</html>
