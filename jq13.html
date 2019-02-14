@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="child1" style="background-color:cadetblue; font:45px"><h2>The first section is represented here.</h2></div>
+            <input type="text" class="child2">
+            <button type="button" class="child3" style="font: bold; font-size: x-large; color:darkred; background-color: darkgoldenrod">Click</button>
+        </div>
+
+        <script>
+        $(document).ready(function(){
+            var max = -1;
+            $("#parent").each(function() {
+                var h = $(this).height(); 
+                max = h > max ? h : max;
+            });
+            alert("Maximum height is : "+max);
+        });
+        </script>
+    </body>
+</html>
